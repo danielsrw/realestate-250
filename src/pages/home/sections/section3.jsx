@@ -1,8 +1,6 @@
-import Card from "../../card/card";
 import { SwiperSlide } from "swiper/react";
 import styles from "./section3.module.scss";
-import Carousel from "../../carousel/carousel";
-import { ArrowButton } from "../../buttons/buttons";
+import { Card, Carousel, ArrowButton } from "../../../components";
 
 const Section3 = () => {
 	return (

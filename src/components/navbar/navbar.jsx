@@ -27,7 +27,7 @@ const Navbar = ({ BurgerColour }) => {
 			<nav>
 				<div className={styles.brand_logo}>
 		          	<Link to="/">
-		          		<img src={ logo } />
+		          		<img src={ logo } alt='logo' />
 		          	</Link>
 		        </div>
 
@@ -41,10 +41,10 @@ const Navbar = ({ BurgerColour }) => {
 		          	</div>
 
 		          	<MenuLink url="" path="Home" />
-		          	<MenuLink url="buy" path="Buy" />
-		          	<MenuLink url="rent" path="Rent" />
-		          	<MenuLink url="search" path="Search" />
 		          	<MenuLink url="about" path="About" />
+		          	<MenuLink url="property" path="Property" />
+		          	<MenuLink url="agents" path="Agents" />
+		          	<MenuLink url="contact" path="Contact" />
 		          	<Link to="/auth" className={styles.login}>
 		            	<span>Login</span>
 		          	</Link>

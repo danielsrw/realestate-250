@@ -1,8 +1,8 @@
-import Navbar from "../../navbar/navbar";
-import styles from "./section1.module.scss";
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import styles from "./section1.module.scss";
 import { building1 } from "../../../assets";
+import { Navbar } from "../../../components";
 
 const Section1 = () => {
 	const [price, setPrice] = useState("<100k");
@@ -27,11 +27,11 @@ const Section1 = () => {
 		          	<div className={styles.search_container}>
 			            <div className={styles.location_container}>
 			              	<span>Location</span>
-			              	<input type="text" placeholder="Enter a Location" onChange={(e) => setLocation(e.target.value)} />
+			              	<input type="text" name='location' placeholder="Enter a Location" onChange={(e) => setLocation(e.target.value)} />
 			            </div>
 			            <div className={styles.price_container}>
 			              	<span>Price Range</span>
-			              	<select name="Price" id="price" onChange={(e) => setPrice(e.target.value)}>
+			              	<select name="price" id="price" onChange={(e) => setPrice(e.target.value)}>
 				                <option value="<100k">{`<100k`}</option>
 				                <option value="100k-200k">100k-200k</option>
 				                <option value="200k-500k">200k-500k</option>

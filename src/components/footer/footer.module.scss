@@ -24,7 +24,7 @@ footer {
         span {
             color: var(--dark-green);
             font-weight: 600;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
 
@@ -34,10 +34,11 @@ footer {
         p,
         svg {
             color: var(--gray);
+            font-size: 0.9rem;
         }
         p {
             width: 200px;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
 
         a {
@@ -51,7 +52,7 @@ footer {
             display: flex;
             gap: 0.5rem;
             svg {
-                font-size: 1.3rem;
+                font-size: 0.9rem;
                 transition: color ease-in-out 200ms;
                 &:hover {
                     color: var(--dark-green);
@@ -62,7 +63,7 @@ footer {
         .subscribe_input {
             padding: 0.5rem 1rem;
             border: 1px solid var(--gray);
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             display: flex;
             align-items: center;
             width: max-content;

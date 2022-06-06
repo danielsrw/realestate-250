@@ -10,6 +10,7 @@
 }
 
 :root {
+    --blue: #007bff;
     --green: rgb(4, 63, 70);
     --dark-green: rgb(26, 55, 58);
     --gray: rgb(136, 136, 136);
@@ -35,7 +36,12 @@ body {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 main > * {
+    font-family: "Poppins", sans-serif;
     padding: 0 3rem;
 
     @media screen and (max-width: 768px) {

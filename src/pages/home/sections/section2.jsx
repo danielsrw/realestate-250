@@ -1,6 +1,6 @@
 import styles from "./section2.module.scss";
-import { ArrowButton } from "../../buttons/buttons";
 import { building2 } from "../../../assets";
+import { ArrowButton } from "../../../components";
 
 const Section2 = () => {
 	return (
