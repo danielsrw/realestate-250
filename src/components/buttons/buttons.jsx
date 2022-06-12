@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import styles from "./buttons.module.scss";
 import { BsArrowRight } from "react-icons/bs";
+import styles from "./buttons.module.scss";
 
 const ArrowButton = ({ text, path }) => {
     return (
@@ -16,4 +16,19 @@ ArrowButton.defaultProps = {
     path: "/",
 };
 
-export { ArrowButton };
+const ActionButton = ({ children, clickFunc }) => {
+    return (
+        <div className={styles.btn_container}>
+            <button onClick={() => { clickFunc(); }}>
+                <span>{children}</span>
+            </button>
+        </div>
+    );
+};
+
+ActionButton.defaultProps = {
+    children: "Test button",
+    clickFunc: console.log("clicked"),
+};
+
+export { ArrowButton, ActionButton };
